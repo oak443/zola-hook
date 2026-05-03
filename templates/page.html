@@ -1,5 +1,12 @@
 {% extends "index.html" %}
 
+{% block extra_head %}
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/fonts/KaTeX_Main-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/fonts/KaTeX_Math-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+{% endblock extra_head %}
+
 {% block title %}{{ config.title }} | {{ page.title }}{% endblock title %}
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
