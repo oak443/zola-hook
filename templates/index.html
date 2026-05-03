@@ -26,7 +26,8 @@
         {% endif %}
     {% endblock %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <!-- 不再使用 KaTeX ，因为太重了。考虑用 GitHub Actions 预制网页。 -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body, {
           delimiters: [
@@ -34,7 +35,7 @@
               {left: '$', right: '$', display: false}
           ],
           throwOnError : false
-    });"></script>
+    });"></script> -->
 </head>
 <body>
     {% block header %}
