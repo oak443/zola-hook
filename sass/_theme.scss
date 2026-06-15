@@ -79,7 +79,8 @@ pre {
         color: var(--code-tertiary);
     }
 
-    &[data-name]::before {
+    &[data-name]::before,
+    &:not([data-name]) > code[data-lang]:not([data-lang=""])::before {
         background-color: var(--code-tertiary);
         color: var(--code-secondary);
     }
